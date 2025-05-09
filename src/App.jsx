@@ -33,21 +33,17 @@
 // }
 
 // export default App
-
+import  { useState } from 'react';
 import Count from './Count.jsx';
 import Button from './Button.jsx';
 
 function App(){
+    const [number, setNumber] = useState(0);
     return (
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-        }}>
-            <Count number={5} limit={true} />
-            <Button />
-        </div>
+     <div className="App">
+        <Count number={number} />
+         <Button setNumber={setNumber} />
+    </div>
     )
 }
 export default App

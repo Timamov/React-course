@@ -1,13 +1,10 @@
 
-export default function Button() {
-    const handleClick = () => {
-        console.log('Button clicked!');
-        console.log('Button clicked!');
-        console.log('Button clicked!');
-        console.log('Button clicked!');
-        console.log('Button clicked!');
-        console.log('Button clicked!');
-    };
-
-    return <button onClick={handleClick}>+</button>;
+export default function Button({  setNumber }) {
+    return (
+        <button onClick={() => {
+           // setNumber(number + 1);
+            setNumber((prev) => prev + 1);
+        }}>+</button>
+    )
 }
+    
