@@ -32,18 +32,26 @@
 //   )
 // }
 
-// export default App
-import  { useState } from 'react';
+
 import Count from './Count.jsx';
 import Button from './Button.jsx';
 
 function App(){
-    const [number, setNumber] = useState(0);
+    // const numbers = [5, 3, 10];
+    // const newNumbers = [numbers, 50]
+    // console.log(newNumbers);
+    // console.log(numbers.map((number) => {return number * 2}));
+
     return (
      <div className="App">
-        <Count number={number} />
-         <Button setNumber={setNumber} />
+        {/* {
+            numbers.map((number, index) => {
+                return <Count key={index} number = {number} />
+            })
+        } */}
+        <Count />
+        <Button />
     </div>
-    )
+    );
 }
 export default App
