@@ -43,7 +43,7 @@ function App(){
     // console.log(numbers.map((number) => {return number * 2}));
 
     return (
-     <div className="App">
+     <div className="app">
         {/* {
             numbers.map((number, index) => {
                 return <Count key={index} number = {number} />
