@@ -1,3 +1,4 @@
+
 function Count(){
 
   // const info = {
@@ -10,8 +11,7 @@ function Count(){
   //   newCount: true,
   // };
   // console.log(newInfo);
-
-  return <span className="count">0
- </span>
+  const number = 5
+  return <span className={`count ${number === 5 & "count--limit"} : ""`}>{number}</span>
 }
 export default Count
